@@ -1,6 +1,6 @@
 import subprocess
 
-PANDOC_PATH = '/Users/kreitz/.cabal/bin//pandoc'
+PANDOC_PATH = '/usr/bin/pandoc'
 
 
 class Document(object):
