@@ -43,7 +43,7 @@ class Document(object):
 	def _output(self, format):
 		# print format
 		p = subprocess.Popen(
-			[PANDOC_PATH, '--from=%s' % self._format, '--to=%s' % format],
+			[PANDOC_PATH, '--from=%s' % self._format, '--to=%s' % format, '--standalone'],
 			stdin=subprocess.PIPE, 
 			stdout=subprocess.PIPE
 		)
